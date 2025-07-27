@@ -1,0 +1,115 @@
+npm start
+// Starts the project using the start script defined in package.json.
+
+npm install -g nodemon
+// Installs nodemon globally. Nodemon automatically restarts the Node.js application when file changes are detected.
+
+npm install body-parser --save-dev
+// Installs the `body-parser` package as a development dependency. It's used for parsing request bodies.
+
+npm install express --save
+// Installs the `express` package as a production dependency. Express is a Node.js framework for building web applications.
+
+npm install express --save-dev
+// Installs the `express` package as a development dependency. Typically, you don't install Express as a dev dependency for production apps.
+
+npm install nodemon --save-dev
+// Installs the `nodemon` package as a development dependency.
+
+npm init
+// Initializes a new Node.js project and creates a package.json file.
+
+npm install
+// Installs all dependencies listed in the package.json file.
+
+
+
+------------------------------------------------------------------------------------------
+Important Node.js Commands:
+Here are additional important Node.js commands with brief descriptions:
+
+General Commands:
+node <filename>
+// Runs the specified JavaScript file using Node.js.
+
+npm init
+// Initializes a new Node.js project, asking for details like name, version, entry point, etc.
+
+npm init -y
+// Automatically initializes a new project with default settings in package.json.
+
+npm install <package-name>
+// Installs a package and adds it to dependencies in package.json.
+
+npm install <package-name> --save-dev
+// Installs a package as a development dependency.
+
+npm uninstall <package-name>
+// Uninstalls a package and removes it from package.json.
+
+npm update
+// Updates all packages to their latest versions.
+
+npm list
+// Lists all installed packages in the current project.
+
+npm outdated
+// Displays a list of outdated packages.
+
+npm cache clean --force
+// Clears the npm cache (useful for fixing certain errors).
+
+
+==========================================================================================
+Debugging & Running Commands:
+node inspect <filename>
+// Starts debugging a Node.js application.
+
+node --watch <filename>
+// Automatically restarts the Node.js application on file changes (from Node.js v18).
+
+nodemon <filename>
+// Runs the Node.js application and restarts automatically on file changes.
+
+==========================================================================================Packages Management :
+npm config set <key> <value>
+// Sets a global configuration key.
+
+npm config get <key>
+// Gets the value of a specific global configuration key.
+
+npm run <script-name>
+// Runs a custom script defined in the "scripts" section of package.json.
+
+npm audit
+// Scans for security vulnerabilities in dependencies.
+
+npm audit fix
+// Automatically fixes vulnerabilities when possible.
+
+==========================================================================================Version Control 
+node -v
+// Displays the installed Node.js version.
+
+npm -v
+// Displays the installed npm version.
+
+nvm install <version>
+// Installs a specific version of Node.js (requires Node Version Manager).
+
+nvm use <version>
+// Switches to a specific Node.js version (requires Node Version Manager).
+
+==========================================================================================
+Additional Useful Tools for Node.js:
+pm2: Used for process management in production environments
+
+npm install -g pm2
+pm2 start <filename>
+
+// Starts the app with pm2 for advanced management like logging and clustering. ```
+
+eslint: For linting JavaScript code.
+npm install eslint --save-dev
+npx eslint --init
+
