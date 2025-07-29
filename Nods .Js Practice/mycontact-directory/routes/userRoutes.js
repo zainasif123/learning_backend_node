@@ -4,7 +4,7 @@ const {
   loginUser,
   getCurrentUser,
 } = require("../controllers/userControllers.js");
-const validateTokenAccessHandler = require("../middleware/validateTokenAccessHandler");
+const validateTokenAccessHandler = require("../middleware/validateTokenAccessHandler.js");
 const UserRouter = express.Router();
 
 UserRouter.post("/register", registerUser);
